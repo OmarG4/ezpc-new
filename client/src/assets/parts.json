@@ -1,0 +1,36 @@
+{
+    "cpu": [
+      { "name": "Intel Core i5-12400F", "price": 170, "benchmark": 13500 },
+      { "name": "AMD Ryzen 5 5600", "price": 150, "benchmark": 14000 },
+      { "name": "Intel Core i7-12700K", "price": 320, "benchmark": 18000 },
+      { "name": "AMD Ryzen 7 5800X", "price": 290, "benchmark": 17500 }
+    ],
+    "gpu": [
+      { "name": "NVIDIA RTX 3060", "price": 280, "benchmark": 17000 },
+      { "name": "AMD Radeon RX 6700 XT", "price": 330, "benchmark": 19000 },
+      { "name": "NVIDIA RTX 4060 Ti", "price": 400, "benchmark": 20000 },
+      { "name": "AMD Radeon RX 6600", "price": 220, "benchmark": 16000 }
+    ],
+    "ram": [
+      { "name": "Corsair Vengeance 16GB DDR4", "price": 60, "benchmark": 8000 },
+      { "name": "G.Skill Ripjaws 32GB DDR4", "price": 100, "benchmark": 9000 }
+    ],
+    "storage": [
+      { "name": "Samsung 970 EVO 1TB SSD", "price": 90, "benchmark": 9000 },
+      { "name": "WD Blue 1TB HDD", "price": 45, "benchmark": 3000 },
+      { "name": "Crucial MX500 500GB SSD", "price": 50, "benchmark": 7000 }
+    ],
+    "motherboard": [
+      { "name": "ASUS Prime B550M-A", "price": 120, "benchmark": 7500 },
+      { "name": "MSI B660M Pro", "price": 130, "benchmark": 7700 }
+    ],
+    "psu": [
+      { "name": "EVGA 600W Bronze", "price": 50, "benchmark": 6000 },
+      { "name": "Corsair 650W Gold", "price": 80, "benchmark": 7000 }
+    ],
+    "case": [
+      { "name": "NZXT H510", "price": 75, "benchmark": 5000 },
+      { "name": "Cooler Master NR400", "price": 60, "benchmark": 4800 }
+    ]
+  }
+
