@@ -2,9 +2,9 @@ import {useState} from 'react';
 import { GoCpu } from "react-icons/go";
 import { CgPullClear } from "react-icons/cg";
 import { FaScaleBalanced } from "react-icons/fa6";
-import { Loading } from './Loading';
+import { Loading } from '../components/Loading';
 
-export const Home = () => {
+const Home = () => {
 
     const [priority, setpriority] = useState("Balanced");
     const [budget, setBudget] = useState("");
@@ -20,29 +20,29 @@ export const Home = () => {
         setpriority(value);
     }
     
-    const fetchData = async () => {
-        try {
-            const response = await fetch('http://localhost:5001/api/run-task', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ budget, priority })
-            });
-            if (!response.ok) throw new Error('Failed to fetch from backend');
-            const data = await response.json();
-            console.log('API Response:', data);
-            return data;
-        } catch (e) {
-            console.error('Fetch Error:', e);
-            throw e;
-        }
-    };
+    // const fetchData = async () => {
+    //     try {
+    //         const response = await fetch('http://localhost:5001/api/run-task', {
+    //             method: 'POST',
+    //             headers: { 'Content-Type': 'application/json' },
+    //             body: JSON.stringify({ budget, priority })
+    //         });
+    //         if (!response.ok) throw new Error('Failed to fetch from backend');
+    //         const data = await response.json();
+    //         console.log('API Response:', data);
+    //         return data;
+    //     } catch (e) {
+    //         console.error('Fetch Error:', e);
+    //         throw e;
+    //     }
+    // };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
         
         await Promise.all([
-            fetchData(),
+            // fetchData(),
             new Promise(resolve => setTimeout(resolve, 2000))
         ]);
         
@@ -109,3 +109,5 @@ export const Home = () => {
         </section>
     );
 }
+
+export default Home;
